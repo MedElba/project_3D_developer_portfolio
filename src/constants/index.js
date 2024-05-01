@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  instagram,
+  unity,
+  techedge,
+  lastminute,
+  extra,
 } from "../assets";
 
 export const navLinks = [
@@ -54,8 +59,8 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Unity Developer",
+    icon: unity,
   },
 ];
 
@@ -81,8 +86,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Unity",
+    icon: unity,
   },
   {
     name: "Tailwind CSS",
@@ -97,16 +102,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -116,11 +113,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Frontend Developer",
+    company_name: "lastminute.com",
+    icon: lastminute,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "October 2021 - now",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -130,41 +127,83 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Freelance",
+    icon: instagram,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Dec 2020 - Jul 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and maintain App using React Native and other related technologies.",
+      "Deploy and publish on both Play Store and Apple Store.",
+      "Instagram API integration.",
+      "Google Maps API integration.",
+      "Local push notifications.",
+      "Remote push notifications.",
+      "Chat system integration.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Frontend Developer",
+    company_name: "Extra.it",
+    icon: extra,
+    iconBg: "#383E56",
+    date: "Oct 2020 - Jul 2021",
+    points: [
+      "Develop multiple website hosting online conferences.", 
+    ],
+  },
+  {
+    title: "Unity Developer",
+    company_name: "Haptica SRL",
+    icon: unity,
+    iconBg: "#383E56",
+    date: "Oct 2019 - Dec 2019",
+    points: [
+      "Android AR app development.",
+      "Marker detection",
+      "AR visualization of animated 3D objects.",
+      "Windows Application dashboard with SQL db integration.",
+      "UDP communication between App and dashboard.",
+    ],
+  },
+  {
+    title: "Unity Developer",
+    company_name: "SoNi SRL",
+    icon: unity,
+    iconBg: "#383E56",
+    date: "Jun 2019 - Dec 2019",
+    points: [
+      "Android AR game development.",
+      "Dreamglass AR glasses integration.",
+      "Vive sensor integration.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Francy Solutions",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Nov 2018 - Nov 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "ASP.NET Core Application developing and maintainance.",
+      "ASP.NET WebForms Application developing and maintainance.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Techedge Group",
+    icon: techedge,
+    iconBg: "#FFFFFF",
+    date: "Sep 2017 - Oct 2019",
+    points: [
+      "SQL Datawarehouse management (advanced queries, stored procedures and database architecture)",
+      "Business intelligence ETL development (Microsoft technologies)",
+      "Advanced data entry techniques",
+      "Microsoft Excel expert and plugin development",
+      ".NET desktop development",
+      "ReactJS + Typescript Frontend development",
+      "Node JS Backend development",
+      ".NET Core Backend development",
+      ".NET Framework Backend development",
     ],
   },
 ];
@@ -198,16 +237,37 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "The House Farmer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows the user to manage their crops with automation of the plant's life cycle.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ionic",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Ades Consulting",
+    description:
+      "Web-based application that allows the management of a factory's warehouse and inventory.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "ionic",
         color: "green-text-gradient",
       },
       {
@@ -219,9 +279,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Visioni Digitali",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "AR application for Luxottica for in-store promotion managed by hostesses of a new line of glasses.",
     tags: [
       {
         name: "react",
@@ -237,27 +297,6 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
     source_code_link: "https://github.com/",
   },
 ];

@@ -29,6 +29,9 @@ import {
   lastminute,
   extra,
 } from "../assets";
+import type { Experience } from "../components/Experience";
+import type { Testimonial } from "../components/Feedbacks";
+import type { Project } from "../components/Works";
 
 export const navLinks = [
   {
@@ -111,7 +114,7 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiences: Experience[] = [
   {
     title: "Frontend Developer",
     company_name: "lastminute.com",
@@ -148,7 +151,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Oct 2020 - Jul 2021",
     points: [
-      "Develop multiple website hosting online conferences.", 
+      "Develop multiple website hosting online conferences.",
     ],
   },
   {
@@ -208,7 +211,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const testimonials: Testimonial[] = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -235,7 +238,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const projects: Project[] = [
   {
     name: "The House Farmer",
     description:

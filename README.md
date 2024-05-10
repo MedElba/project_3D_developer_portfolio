@@ -124,7 +124,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 ## <a name="snippets">🕸️ Snippets</a>
 
 <details>
-<summary><code>constants.js</code></summary>
+<summary><code>constants.ts</code></summary>
 
 ```javascript
 import {
@@ -702,7 +702,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 </details>
 
 <details>
-<summary><code>styles.js</code></summary>
+<summary><code>styles.ts</code></summary>
 
 ```javascript
 const styles = {

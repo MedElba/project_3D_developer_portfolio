@@ -9,7 +9,6 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 export type Project = {
-  index: number;
   name: string;
   description: string;
   tags: {
@@ -20,7 +19,7 @@ export type Project = {
   source_code_link: string;
 };
 
-const ProjectCard: React.FC<Project> = ({
+const ProjectCard: React.FC<Project & { index: number }> = ({
   index,
   name,
   description,
@@ -81,7 +80,7 @@ const ProjectCard: React.FC<Project> = ({
   );
 };
 
-const Works = () => {
+const Works: React.FC = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -103,8 +102,8 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {projects.map((project, _index) => (
+          <ProjectCard key={`project-${_index}`} index={_index} {...project} />
         ))}
       </div>
     </>

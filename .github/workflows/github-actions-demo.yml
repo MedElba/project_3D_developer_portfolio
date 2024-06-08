@@ -28,5 +28,9 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: medelba/web-portfolio:latest
+          tags: ${{ secrets.DOCKER_REGISTRY }}:latest
           platforms: linux/amd64
+
+      - name: Notify Deployment Service
+        run: |
+          curl -X POST ${{ secrets.PORTAINER_HOOK }} -H 'Content-Type: application/json'

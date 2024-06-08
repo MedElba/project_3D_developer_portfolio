@@ -1,4 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, {
+  ChangeEventHandler,
+  FormEventHandler,
+  useRef,
+  useState,
+} from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -8,7 +13,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact: React.FC = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -17,7 +22,9 @@ const Contact: React.FC = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange: ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
     const { target } = e;
     const { name, value } = target;
 
@@ -27,7 +34,7 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit: FormEventHandler = (e) => {
     e.preventDefault();
     setLoading(true);
 

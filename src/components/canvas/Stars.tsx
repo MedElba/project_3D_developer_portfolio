@@ -1,7 +1,7 @@
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.esm";
+import * as random from "maath/random";
 
 const Stars: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -17,6 +17,8 @@ const Stars: React.FC = () => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
+      {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+      {/* @ts-expect-error */}
       <Points ref={ref} positions={sphere} stride={3} frustumCulled>
         <PointMaterial
           transparent
